@@ -1,17 +1,37 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Aujourd'hui
     </ion-title>
+    <ion-avatar id="avatar" slot="end" button (click)="connexion()"><img [src]="urlAuth" /></ion-avatar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-item-sliding *ngFor="let tache of (tacheService.tasks)">
+      <ion-item-options side="start">
+        <ion-item-option color="success" (click)="valider(tache)">Valider !</ion-item-option>
+      </ion-item-options>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+      <ion-item>
+        {{tache.titre}}
+        <ion-badge color="primary" slot="end">{{formatDate(tache.dateLimite)}}</ion-badge>
+        <ion-badge color="danger" slot="end">{{tache.amende}} €</ion-badge>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="echec(tache)">Echec !</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+
+
+  <!-- Bouton Ajout Tache -->
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="addTache()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

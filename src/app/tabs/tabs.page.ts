@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TacheService } from '../service/tache.service';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  constructor() {
+  }
 
 }

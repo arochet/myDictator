@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "241452602168",
+    "firebase_url": "https://mydictator.firebaseio.com",
+    "project_id": "mydictator",
+    "storage_bucket": "mydictator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241452602168:android:3a0385f07f2495815ba7cd",
+        "android_client_info": {
+          "package_name": "app.rocket.mydictator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241452602168-ludho7tt633dlkbulni5hmdlo9foevdg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.rocket.mydictator",
+            "certificate_hash": "125312a9700919e39f8b5301199e028c32c0a963"
+          }
+        },
+        {
+          "client_id": "241452602168-qkee9neub6an4j90crf9svlq8snaddgb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvqVHZoueF0QMComDOUzCIsY9Hexu17eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241452602168-qkee9neub6an4j90crf9svlq8snaddgb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

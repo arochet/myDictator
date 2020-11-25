@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>connexion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="page==0">
+    <ion-button color="primary" (click)="googlesigneup()"><ion-icon name="logo-google"></ion-icon> Sign in</ion-button>
+    <ion-button color="danger" (click)="annuler()">Annuler</ion-button>
+  </div>
+
+  <div *ngIf="page==1">
+    <ion-button color="primary" (click)="ok()">OK</ion-button>
+  </div>
+</ion-content>

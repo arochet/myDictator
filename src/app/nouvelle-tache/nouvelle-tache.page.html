@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nouvelle tache</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Tache -->
+  <ion-item>
+    <ion-label>Tache : </ion-label>
+    <ion-input #inputToFocus [(ngModel)]="titre"></ion-input>
+  </ion-item>
+
+  <!-- Amende -->
+  <ion-item>
+    <ion-label>Amende : </ion-label>
+    <ion-segment [(ngModel)]="amende">
+      <ion-segment-button value=10>
+        <ion-label>10€</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value=20>
+        <ion-label>20€</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value=50>
+        <ion-label>50€</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-item>
+
+  <!-- Date -->
+  <ion-item>
+    <ion-label>Amende : </ion-label>
+    <ion-segment [(ngModel)]="date">
+      <ion-segment-button value=1>
+        <ion-label>Aujourd'hui</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value=2>
+        <ion-label>Demain</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value=4>
+        <ion-label>Autre</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-item>
+
+  <div class="center">
+    <ion-button (click)="valider()" color="success">Valider</ion-button>
+    <ion-button (click)="annuler()" color="danger">Annuler</ion-button>
+  </div>
+
+</ion-content>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">myDictator</string>
+    <string name="title_activity_main">myDictator</string>
+    <string name="package_name">app.rocket.mydictator</string>
+    <string name="custom_url_scheme">app.rocket.mydictator</string>
+    <string name="server_client_id">241452602168-ludho7tt633dlkbulni5hmdlo9foevdg.apps.googleusercontent.com</string>
+</resources>
